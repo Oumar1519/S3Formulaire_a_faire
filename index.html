@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>Formulaire de connection</h1>
+<form method="post" action="connecte.html">
+  <label>Nom:
+    <input name="=nom" type="text" required>
+  </label>
+    <label>Prénom:
+        <input name="prenom" type="text" required>
+    </label>
+    <label>courriel:
+        <input name="courriel" type="email" required>
+    </label>
+    <label>Telephone:
+        <input name="telephone" type="tel" required>
+    </label>
+
+    <label>Pays
+        <select name="pays">
+            <option value="canada">Canada</option>
+            <option value="guinee">Guinée</option>
+        </select>
+    </label>
+    <label>Commentaires
+        <textarea name="commentaire" id="" cols="10" rows="5"></textarea>
+    </label>
+    <label>J'acepte les conditions
+        <input type="checkbox" name="condition">
+    </label>
+    <label>J'acepte les conditions
+        <input type="checkbox" name="publicite">
+    </label>
+    <label> Sexe
+        <input type="radio" name="sexe" value="M">Masculin</input>
+        <input type="radio" name="sexe" value="F">Feminin</input>
+        <input type="radio" name="sexe" value="A">Autres</input>
+    </label>
+
+
+    <label>Mot de passe:
+        <input name="passwor1" type="password" required>
+    </label>
+    <label>Mot de passe:
+        <input name="passwor2" type="password" required>
+    </label>
+<!--submit execue l'action du form si sauf si la FONCTION DANS ONCLICK RETURN FALS-->
+    <input type="submit" value="connexion" onclick=" return valider()">Envoyer</input>
+    <button type="reset" value="effacer">Annuler</button>
+    <button onclick="alert('allo')"> popup</button>
+
+</form>
+</body>
+</html>
