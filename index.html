@@ -16,10 +16,11 @@
         <input name="prenom" type="text" required>
     </label>
     <label>courriel:
-        <input name="courriel" type="email" required>
+        <input name="courriel" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
     </label>
     <label>Telephone:
-        <input name="telephone" type="tel" required>
+        <input name="telephone" type="tel" required placeholder="819-555-5555"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
     </label>
 
     <label>Pays
